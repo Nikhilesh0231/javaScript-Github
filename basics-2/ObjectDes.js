@@ -15,4 +15,5 @@ console.log(name);//Nikhilesh
 const { age:StudentAge } = user
 console.log(StudentAge);//22
 
+console.log(user)
 
