@@ -22,3 +22,9 @@ while(i<myArray.length){
     
 // } while (condition);
 
+let score = 1
+
+do {
+    console.log(`Score is ${score}`);
+    score = score+4;
+} while (score<=10);
