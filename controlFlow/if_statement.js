@@ -73,3 +73,7 @@ if(userLoggedIn && debitCard){
 if(loggedInFromGoogle || loggedInFromEmail){
     console.log("User Logged In");    
 }
+
+if(userLoggedIn || loggedInFromGoogle){
+    console.log("Allowed to Shop");    
+}
