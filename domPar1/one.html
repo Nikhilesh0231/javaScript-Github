@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Part1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #212121;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-black">
+        <h1 id="title" class="heading">Dom Part1</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <script>
+        let heading = document.getElementById("title");
+        console.log(heading);//<h1 id="title" class="heading">Dom Part1</h1>
+        
+        console.log(heading.innerText);//Dom Part1
+        console.log(heading.id);//title
+        console.log(heading.getAttribute('id'));//title//here we pass the key and we get values of that key
+        
+        console.log(heading.class);//undefined
+        console.log(heading.className);//heading
+        
+
+        //Set Attribute - it overWrites existing value so if we want to add one more class in h1 then we first write previous one after that we can add new one
+
+        heading.setAttribute('class','heading new1')
+        console.log(heading.className);//heading new1
+
+        heading.style.color="red"
+        heading.style.backgroundColor="Yellow"
+        heading.style.padding = "25px"
+        console.log(heading.style)
+        
+        
+        
+    </script>
+</body>
+</html>
