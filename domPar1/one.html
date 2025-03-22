@@ -17,8 +17,11 @@
 </head>
 <body>
     <div class="bg-black">
-        <h1 id="title" class="heading">Dom Part1</h1>
+        <h1 id="title" class="heading">Dom Part1
+            <span style="display:none;">Though how it will shown</span>
+        </h1>              
         <p>Lorem ipsum dolor sit amet.</p>
+        <h2 id="heading2"></h2>
     </div>
     <script>
         let heading = document.getElementById("title");
@@ -39,10 +42,30 @@
 
         heading.style.color="red"
         heading.style.backgroundColor="Yellow"
-        heading.style.padding = "25px"
+        heading.style.padding = "5px"
+        heading.style.margin= "12px"
+        heading.style.borderRadius= "10px"
         console.log(heading.style)
+
+        const text = heading.innerText;
+        const content = heading.textContent;
+        const HTML = heading.innerHTML;
+        
+        const heading2 = document.getElementById("heading2");
+        // heading2.innerText = text; 
+        // Dom Part1
+
+        // heading2.innerText = content;
+        // Dom Part1
+        // Though how it will shown
+
+        // heading2.innerText = HTML;
+        // Dom Part1
+        // <span style="display:none;">Though how it will shown</span> 
         
         
+
+
         
     </script>
 </body>
