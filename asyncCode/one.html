@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>AsyncCode</h1>
+    <h1 id="h1">Veeru</h1>
+    <h2 id="h2">Web Developer</h2>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    setTimeout(function(){
+        console.log("Hello Nikhilesh");        
+    },2000)
+
+    setTimeout(()=>{
+        document.getElementById('h1').innerHTML = "Nikhilesh";
+    },1000)
+    setTimeout(()=>{
+        document.getElementById('h1').innerHTML = "Tiwari";
+    },3000)
+
+    setInterval(() => {
+        document.getElementById('h2').innerText = "Software Developer";
+    }, 1000);
+    setInterval(() => {
+        document.getElementById('h2').innerText = "Web Developer";
+    }, 2000);
+
+
+    setInterval(()=>{
+        console.log("Veeru");
+    },8000)
+</script>
+</html>
