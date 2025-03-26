@@ -34,5 +34,15 @@
     setInterval(()=>{
         console.log("Veeru");
     },8000)
+
+    // now we want to stop time out functionality
+    const changeName = setTimeout(()=>{
+        document.getElementById("h1").innerHTML = "Nikhilesh Tiwari";
+    },5000);
+
+    document.getElementById('stop').addEventListener('click',()=>{
+        clearTimeout(changeName);
+        console.log("Stopped Change Name TimeOut");        
+    })
 </script>
 </html>
